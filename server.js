@@ -28,7 +28,7 @@ const pokeSchema = new mongoose.Schema({
 });
 const pokeModel = mongoose.model("pokemon", pokeSchema);
 
-app.listen(process.env.port || 5000, (err) => {
+app.listen(process.env.PORT || 5000, (err) => {
     if (err) {
         console.log(err);
     }
